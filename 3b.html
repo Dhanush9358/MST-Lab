@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript">
+var n,i=3;
+var a=new Array();
+var b=new Array();
+var c=new Array();
+n=parseInt(window.prompt("enter number of movies","1"));
+for ( var i = 0;i < n; i++)
+{
+	 a[i]=window.prompt("enter movie name","something");
+	 b[i]=parseInt(window.prompt("enter rating","1"));
+	 c[i]=window.prompt("enter language","telugu");
+	document.write("<h1 style='color:red'>moviename:"+a[i]+"<br>rating:"+b[i]+"<br>language:"+c[i]+"</h1>"); 
+}
+document.write("<table border='3'><tr><th>moviename</th><th>rating</th><th>langugage</th>");
+	for(i=0;i<n;i++)
+document.write("<tr><td style='color:blue'>"+a[i]+"</td><td style='color:green'>"+b[i]+"</td><td style='color:blue'>"+c[i]+"</td></tr>");
+document.write("</table>");
+</script>
+</head>
+</html>
